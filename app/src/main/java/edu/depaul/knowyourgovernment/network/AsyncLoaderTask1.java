@@ -1,4 +1,4 @@
-package edu.depaul.knowyourgovernment;
+package edu.depaul.knowyourgovernment.network;
 
 import android.annotation.SuppressLint;
 import android.net.Uri;
@@ -18,6 +18,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import edu.depaul.knowyourgovernment.activities.MainActivity;
+
 
 public class AsyncLoaderTask1  extends AsyncTask<String, Void, String> {
 
@@ -34,7 +36,7 @@ public class AsyncLoaderTask1  extends AsyncTask<String, Void, String> {
 
 
 
-    AsyncLoaderTask1(MainActivity ma) {
+    public AsyncLoaderTask1(MainActivity ma) {
         mainActivity = ma;
     }
 

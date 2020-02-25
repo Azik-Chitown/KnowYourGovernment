@@ -1,4 +1,4 @@
-package edu.depaul.knowyourgovernment;
+package edu.depaul.knowyourgovernment.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,8 +7,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
 import java.util.List;
+
+import edu.depaul.knowyourgovernment.R;
+import edu.depaul.knowyourgovernment.activities.MainActivity;
+import edu.depaul.knowyourgovernment.models.DummyObj;
 
 public class CivicDataAdapter extends RecyclerView.Adapter <MyViewHolder> {
 
@@ -16,7 +19,7 @@ public class CivicDataAdapter extends RecyclerView.Adapter <MyViewHolder> {
 
     private List <DummyObj> officialList;
 
-    CivicDataAdapter (List <DummyObj> officialList, MainActivity mainAct ) {
+    public CivicDataAdapter(List<DummyObj> officialList, MainActivity mainAct) {
         this.officialList=officialList;
         this.mainAct=mainAct;
 

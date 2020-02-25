@@ -1,7 +1,4 @@
-package edu.depaul.knowyourgovernment;
-
-import java.util.ArrayList;
-import java.util.HashMap;
+package edu.depaul.knowyourgovernment.models;
 
 public class DummyObj {
 

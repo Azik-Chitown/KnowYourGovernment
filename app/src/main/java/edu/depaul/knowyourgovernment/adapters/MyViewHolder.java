@@ -1,9 +1,11 @@
-package edu.depaul.knowyourgovernment;
+package edu.depaul.knowyourgovernment.adapters;
 
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import edu.depaul.knowyourgovernment.R;
 
 public class MyViewHolder extends RecyclerView.ViewHolder {
 

@@ -1,7 +1,6 @@
-package edu.depaul.knowyourgovernment;
+package edu.depaul.knowyourgovernment.activities;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -11,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.Address;
 import android.location.Criteria;
@@ -19,20 +17,22 @@ import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.text.InputFilter;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+
+import edu.depaul.knowyourgovernment.network.AsyncLoaderTask1;
+import edu.depaul.knowyourgovernment.adapters.CivicDataAdapter;
+import edu.depaul.knowyourgovernment.R;
+import edu.depaul.knowyourgovernment.models.DummyObj;
 
 import static android.content.pm.PackageManager.PERMISSION_GRANTED;
 
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (permissions[0].equals(Manifest.permission.ACCESS_FINE_LOCATION) &&
                     grantResults[0] == PERMISSION_GRANTED) {
                 setLocation();
-                return;
+
             }
         }
 

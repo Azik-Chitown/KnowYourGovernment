@@ -1,8 +1,10 @@
-package edu.depaul.knowyourgovernment;
+package edu.depaul.knowyourgovernment.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import edu.depaul.knowyourgovernment.R;
 
 public class AboutActivity extends AppCompatActivity {
 

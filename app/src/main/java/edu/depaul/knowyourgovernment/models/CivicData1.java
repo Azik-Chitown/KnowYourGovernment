@@ -1,27 +1,19 @@
-/*package edu.depaul.knowyourgovernment;
-import android.annotation.SuppressLint;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
-import android.os.AsyncTask;
-import android.util.Log;
+package edu.depaul.knowyourgovernment.models;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Serializable;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.ArrayList;
-import java.util.Locale;
 
+/*
+
+class CivicData1 {
+    public String address;
+    public ArrayList<Office> offices = new ArrayList<>();
+
+}
+class Office{
+    public String name;
+    public ArrayList<Official> officials = new ArrayList<>();
+}
 class Official  {
     public String name;
     public String address;
@@ -33,16 +25,11 @@ class Official  {
     public HashMap<String,String> channels = new HashMap<>(); // type, id
 }
 
-class Office implements Serializable{
-    public String name;
-    public ArrayList<Official> officials = new ArrayList<>();
-}
 
-class CivicData implements Serializable {
-    public String address;
-    public ArrayList<Office> offices = new ArrayList<>();
-}
+*/
 
+
+/*
 public class AsyncLoaderTask  extends AsyncTask<String, Void, String> {
 
     private static final String TAG = "AsyncLoaderTask";
@@ -52,7 +39,7 @@ public class AsyncLoaderTask  extends AsyncTask<String, Void, String> {
     //private Bitmap bitmap;
 
 
-    private CivicData civicData;
+    private CivicData1 civicData;
     //private Bitmap civicBitmap;
 
    // private static final String weatherURL = "http://api.openweathermap.org/data/2.5/weather";
@@ -178,6 +165,5 @@ public class AsyncLoaderTask  extends AsyncTask<String, Void, String> {
             e.printStackTrace();
         }
     }
-}
+}*/
 
-*/
